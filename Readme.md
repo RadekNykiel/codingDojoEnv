@@ -13,13 +13,14 @@ Requires installed git.
 1. Copy program source (\*.cpp) files to 'src' directory and header files (\*.h,\*.hpp) to 'src/include'.
 2. Copy test source (\*.cpp) files to 'test' directory.
 3. Edit CMakeFile.txt file:
-    * Change project name in `project( )` section.
-    * Set main program name and test program name in following lines:
+* Change project name in `project( )` section.
+* Set main program name and test program name in following lines:
 ```
 set(MAIN_PROGRAM_NAME <program_name>)
 set(TEST_PROGRAM_NAME <test_program_name>)
 ```
-    * Change source files:
+
+* Change source files:
 ```
 add_executable(
     ...
@@ -28,7 +29,8 @@ add_executable(
     ...
 )
 ```
-    * Update test sources:
+
+* Update test sources:
 ```
 add_executable(
     ...
