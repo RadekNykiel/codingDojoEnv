@@ -75,4 +75,10 @@ make
 
 Run binaries from the cmd line.
 
+## Codespace
+
+Fork repository at Github. Create a codespace.
+Wait until container is created and VS code shows up in your browser.
+Proceed with cmake commands in VS Code: Command palette (CTRL+SHIFT+P) and type in `cmake configure ...`, then `cmake build...`.
+
 
