@@ -24,12 +24,15 @@ add_executable(
     src/main.cpp
     src/Tool.cpp
     src/Dummy.cpp
+    src/Snail.cpp
 )
 
 add_executable(
   ${TEST_PROGRAM_NAME}
   test/tests.cpp
+  test/snail_tests.cpp
   src/Dummy.cpp
+  src/Snail.cpp
 )
 
 target_include_directories(

@@ -1,4 +1,3 @@
-
 #include "Dummy.h"
 
 #include <gtest/gtest.h>
