@@ -1,6 +1,5 @@
 #include <vector>
 #include "Snail.h"
-#include <iostream>
 
 std::vector<int> Snail::snail(const std::vector<std::vector<int>> &snail_map) 
 {
@@ -19,9 +18,8 @@ std::vector<int> Snail::snail(const std::vector<std::vector<int>> &snail_map)
     int bottom_edge = height;  
     int elems = (height+1)*(width+1);
 
-
+    while(1) {
     for(auto it = snail_map[top_edge].cbegin() + left_edge; it != snail_map[top_edge].cend() - width + right_edge; it++) {
-        std::cout << "XD" <<std::endl;
         ret.push_back(*it);
     }
     top_edge++;
@@ -47,4 +45,5 @@ std::vector<int> Snail::snail(const std::vector<std::vector<int>> &snail_map)
     }
     left_edge++;
     if(ret.size() == elems) return ret;
+    }
 }
