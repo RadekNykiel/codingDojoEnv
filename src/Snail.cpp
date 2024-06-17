@@ -39,4 +39,12 @@ std::vector<int> Snail::snail(const std::vector<std::vector<int>> &snail_map)
     }
     bottom_edge--;
     if(ret.size() == elems) return ret;
+
+
+    for(auto it = snail_map.crbegin() + height - bottom_edge; it != snail_map.crend() - top_edge; it++) {
+        const auto& row = *it;
+        ret.push_back(row[0]);
+    }
+    left_edge++;
+    if(ret.size() == elems) return ret;
 }

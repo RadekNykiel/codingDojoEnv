@@ -38,3 +38,12 @@ TEST(SnailTest, two_rows) {
     EXPECT_EQ(s.snail(input),output);
 }
 
+TEST(SnailTest, one_loop) {
+    M input = {{1,2}, 
+                {6,3},
+                {5,4}};
+    V output = {1,2,3,4,5,6};
+    Snail s = Snail {};
+    EXPECT_EQ(s.snail(input),output);
+}
+
